@@ -14,6 +14,7 @@ class MoviesViewModel : ViewModel() {
     val favoriteMovies: List<Movie>
         get() = _movies.filter { movie -> movie.isFavorite }
 
+    // function to toggle favorite status of a movie
     fun toggleFavoriteMovie(movieId: String) = _movies.find { it.id == movieId }?.let { movie ->
         movie.isFavorite = !movie.isFavorite
     }
