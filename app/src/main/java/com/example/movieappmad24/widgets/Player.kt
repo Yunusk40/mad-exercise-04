@@ -19,7 +19,7 @@ import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.ui.PlayerView
 
-
+//source: https://www.youtube.com/watch?v=NpCSzl74ciY&t=1s
 @Composable
 fun Player(trailer: String) {
     var lifecycle by remember {
